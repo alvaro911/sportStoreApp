@@ -60,7 +60,7 @@
 			</label>
 		</div>
 		<div class="text-center">
-			<button ng-disabled="shippingForm.$invalid" class="btn btn-primary" ng-click="sportStore.sendOrder(data.shipping)">Complete order</button>
+			<button ng-disabled="shippingForm.$invalid" class="btn btn-primary" ng-click="sportStore.sendOrder(sportStore.data.shipping)">Complete order</button>
 		</div>
 	</div>
 </form>

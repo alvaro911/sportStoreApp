@@ -15,6 +15,7 @@
 				});
 			vm.sendOrder = function(shippingDetails){
 				var order = angular.copy(shippingDetails);
+				console.log('This is the order: ', order);
 				order.products = cart.getProducts();
 				$http.post(orderUrl, order)
 					.success(function(data){
